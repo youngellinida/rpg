@@ -1,0 +1,154 @@
+html,
+body {
+  margin: 0px;
+  padding: 0px;
+  min-height: 100%;
+  height: 100%;
+  min-height: 300px;
+}
+
+#header {
+  min-height: 50px;
+  background-color: #212529;
+}
+
+#header-content {
+  border: 1px black;
+  height: 32px;
+  /* height + top/bottom paddding + top/bottom border must add up to footer height */
+  padding: 8px;
+  color: #868e96;
+}
+
+#main-content {
+  min-height: 500px;
+  margin: 10px;
+}
+
+#sidebar {
+  background-color: #212529;
+  border: 5px black;
+  color: #868e96;
+}
+
+.sidebar-content div:hover {
+  color: black;
+  text-decoration: underline;
+}
+
+#footer {
+  min-height: 50px;
+  background: rgba( 255, 255, 255, 0.25 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 4px );
+-webkit-backdrop-filter: blur( 4px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+  color: #000000;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.footer-content {
+  border: 1px black;
+  height: 32px;
+  padding: 8px;
+}
+
+#location-menu {
+  padding-bottom: 4px;
+  border-bottom: 3px solid #868e96;
+  margin-bottom: 2px;
+}
+
+div.button {
+  position: relative;
+  text-align: center;
+  background-color: #a6cdf4;
+  border: 1px solid black;
+  min-width: 100px;
+  margin: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+  display: inline-block;
+}
+
+div.inline {
+  display: inline-block;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+div.button:hover {
+  text-decoration: underline;
+}
+
+div.itemValidPurchase,
+div.itemTooExpensive {
+  position: relative;
+  text-align: center;
+  border: 1px solid black;
+  width: 80;
+  margin-bottom: 2px;
+  padding: 2px 4px;
+}
+
+div.itemTooExpensive {
+  text-decoration: line-through;
+}
+
+div.combatLog {
+  border: 1px solid black;
+  width: 60%;
+  height: 150px;
+  background: #eff0f1;
+  margin: auto;
+  margin-top: 20px;
+  overflow: auto;
+}
+
+p.combatText {
+  text-align: center;
+  margin-bottom: 6px;
+  margin-top: 6px;
+}
+
+div.combatMenu {
+  border: 1px solid black;
+  width: 70%;
+  min-height: 60px;
+  background: #a6cdf4;
+  margin: auto;
+  margin-top: 50px;
+}
+
+div.combatButton {
+  margin-top: 5px;
+  background: rgb(174, 203, 247);
+  border: none;
+  display: inline-block;
+  text-decoration: none;
+  position: relative;
+  text-align: center;
+  border: 1px solid black;
+  margin: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+div.combatButtonTooExpensive {
+  background: red;
+  text-decoration: line-through;
+  cursor: auto;
+}
+
+#characterClasses table {
+  display: block;
+  border-collapse: collapse;
+}
+
+#characterClasses td {
+  display: inline-block;
+  max-width: 200px;
+  padding: 5px;
+  border: 2px solid #506375;
+}

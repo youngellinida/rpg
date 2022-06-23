@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+		<!--  Meta  -->
+		<meta charset="UTF-8" />
+		<title>WIP</title>
+
+		<!--  Styles  -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css"></link>
+		<link rel="stylesheet" href="styles/index.css">
+		<link rel="stylesheet" href="styles/ui.css">
+</head>
+
+<body>
+		<div class="container-fluid" id="header">
+				<div id="header-content" class="row">Header</div>
+		</div>
+
+		<div class="container-fluid text-center">
+				<div class="row content">
+						<div class="col-sm-2 sidenav sidebar" id="sidebar">
+							<div id="location-menu" class="sidebar-content"></div>
+							<div id="character-menu" class="sidebar-content"></div>
+						</div>
+						<div class="col-sm-9 main" id="main">
+							<div id="guide">
+								<p>Only soldier class has skills at this point.</p>
+								<p>Skills can be programmed for auto-battle under character -> tactics.</p>
+								<button onclick="$(guide).empty()">Remove</button>
+							</div>
+							<div id="main-content">
+							</div>
+						</div>
+<!-- 						<div class="col-sm-2 sidenav">
+								<div class="well">
+										<p>ADS</p>
+								</div>
+								<div class="well">
+										<p>ADS</p>
+								</div>
+						</div> -->
+				</div>
+		</div>
+
+		<footer class="container-fluid text-center" id="footer">
+			<div class="footer-content" id="footer-content">
+				<p>Footer Text</p>
+			</div>
+		</footer>
+
+		<!-- External Scripts -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+		<!-- Scripts -->
+		<script src="scripts/enemies.js"></script>
+		<script src="scripts/skills.js"></script>
+		<script src="scripts/items.js"></script>
+		<script src="scripts/class.js"></script>
+		<script src="scripts/actor.js"></script>
+		<script src="scripts/zones.js"></script>
+		<script src="scripts/tactic.js"></script>
+		<script src="scripts/view.js"></script>
+		<script src="scripts/Engine.js"></script>
+</body>
+
+</html>
